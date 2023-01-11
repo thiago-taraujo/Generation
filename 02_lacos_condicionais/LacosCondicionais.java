@@ -155,7 +155,7 @@ public class CalculoImposto {
 //Exercicio 6
 package LacosCondicionais;
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
 public class EscolhaAnimal {
     public static void main(String[] args) {
@@ -163,25 +163,25 @@ public class EscolhaAnimal {
         String vertebra, classe, alimentacao;
         System.out.println("Escolha entre vertebrado e invertebrado: ");
         vertebra = ler.nextLine();
-        if(vertebra.equals("vertebrado")){
+        if(vertebra.equalsIgnoreCase("vertebrado")){
             System.out.println("Escolha entre ave e mamifero: ");
             classe = ler.next();
-            if(classe.equals("ave")) {
+            if(classe.equalsIgnoreCase("ave")) {
                 System.out.println("Escolha entre carnivoro e onivoro");
                 alimentacao = ler.next();
-                if (alimentacao.equals("carnivoro")) {
+                if (alimentacao.equalsIgnoreCase("carnivoro")) {
                     System.out.println("O animal escolhido foi águia.");
-                } else if (alimentacao.equals("onivoro")) {
+                } else if (alimentacao.equalsIgnoreCase("onivoro")) {
                     System.out.println(("O animal escolhido foi pomba."));
                 } else {
                     System.out.println("Alimentação inválida");
                 }
-            }else if(classe.equals("mamifero")){
+            }else if(classe.equalsIgnoreCase("mamifero")){
                 System.out.println("Escolha entre onivoro e herbivoro");
                 alimentacao = ler.next();
-                if (alimentacao.equals("herbivoro")) {
+                if (alimentacao.equalsIgnoreCase("herbivoro")) {
                     System.out.println("O animal escolhido foi vaca.");
-                } else if (alimentacao.equals("onivoro")) {
+                } else if (alimentacao.equalsIgnoreCase("onivoro")) {
                     System.out.println(("O animal escolhido foi homem."));
                 } else {
                     System.out.println("Alimentação inválida");
@@ -189,25 +189,25 @@ public class EscolhaAnimal {
             }else{
                 System.out.println("Classe inválida.");
             }
-        }else if(vertebra.equals("invertebrado")){
+        }else if(vertebra.equalsIgnoreCase("invertebrado")){
             System.out.println("Escolha entre inseto e anelideo: ");
             classe = ler.next();
-            if(classe.equals("inseto")) {
+            if(classe.equalsIgnoreCase("inseto")) {
                 System.out.println("Escolha entre hematofogo e herbivoro");
                 alimentacao = ler.next();
-                if (alimentacao.equals("hematofogo")) {
+                if (alimentacao.equalsIgnoreCase("hematofogo")) {
                     System.out.println("O animal escolhido foi pulga.");
-                } else if (alimentacao.equals("herbivoro")) {
+                } else if (alimentacao.equalsIgnoreCase("herbivoro")) {
                     System.out.println(("O animal escolhido foi lagarta."));
                 } else {
                     System.out.println("Alimentação inválida");
                 }
-            }else if(classe.equals("anelideo")){
+            }else if(classe.equalsIgnoreCase("anelideo")){
                 System.out.println("Escolha entre hematofogo e onivoro");
                 alimentacao = ler.next();
-                if (alimentacao.equals("hematofogo")) {
+                if (alimentacao.equalsIgnoreCase("hematofogo")) {
                     System.out.println("O animal escolhido foi sanguessuga.");
-                } else if (alimentacao.equals("onivoro")) {
+                } else if (alimentacao.equalsIgnoreCase("onivoro")) {
                     System.out.println(("O animal escolhido foi minhoca."));
                 } else {
                     System.out.println("Alimentação inválida");
